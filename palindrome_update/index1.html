@@ -1,0 +1,44 @@
+<!-- Robert Walcott 11/23/24 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information about the page -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <!-- Link to a custom Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!-- Form container -->
+    <div class="form-container">
+        <h1>Enhanced Palindrome Checker</h1>
+
+        <!-- Form with input fields -->
+        <form onsubmit="return validateInputs(event)">
+            <!-- Input fields for first and last names -->
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+
+            <!-- Input field for zip code -->
+            <input type="text" id="zipCode" placeholder="Zip Code (5 digits)" required>
+
+            <!-- Input field for string to check palindrome -->
+            <input type="text" id="inputString" placeholder="Enter a word" required>
+            
+            <!-- Submit button -->
+            <button type="submit">Check</button>
+        </form>
+
+        <!-- Result section -->
+        <div id="result" class="result-message"></div>
+    </div>
+
+    <!-- JavaScript for validation and palindrome checking -->
+    <div>
+        <script src = "script1.js"></script>
+    </div>
+</body>
+</html>
